@@ -47,7 +47,8 @@ pipeline {
             -e SPOTIFY_CLIENT_SECRET='$SPOTIFY_CLIENT_SECRET' \
             -e SPOTIFY_REFRESH_TOKEN='$SPOTIFY_REFRESH_TOKEN' \
             -e SPOTIFY_PLAYLIST_ID='$SPOTIFY_PLAYLIST_ID' \
-            $DOCKER_USER/spotify-script:latest "Tum Hi Ho"
+            $DOCKER_IMAGE:latest "Tum Hi Ho"
+
         """
       }
     }
